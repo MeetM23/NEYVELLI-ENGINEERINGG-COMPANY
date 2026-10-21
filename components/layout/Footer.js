@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Logo from "@/components/ui/Logo";
 import SocialLinks from "@/components/ui/SocialLinks";
-import { services } from "@/lib/data/home";
+import { serviceDetails } from "@/lib/data/services";
 import { contactInfo, footerLinks, navLinks, siteConfig } from "@/lib/site";
 
 const headingClass = "text-sm font-bold uppercase tracking-wide text-white";
@@ -59,9 +59,9 @@ export default function Footer() {
         <div>
           <h3 className={headingClass}>Our Services</h3>
           <ul className="mt-4 space-y-2.5">
-            {services.map((s) => (
-              <li key={s.title}>
-                <Link href="/#services" className={linkClass}>
+            {serviceDetails.map((s) => (
+              <li key={s.slug}>
+                <Link href={`/services#${s.slug}`} className={linkClass}>
                   {s.title}
                 </Link>
               </li>

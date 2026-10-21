@@ -25,7 +25,7 @@ export default function Hero() {
           services for Industrial, Commercial and Civil Projects across India.
         </p>
         <Link
-          href="#services"
+          href="/services"
           className="mt-7 inline-flex items-center gap-2 rounded bg-brand px-5 py-2.5 text-xs font-semibold transition hover:bg-brand-dark"
         >
           Our Services <ArrowRight size={14} />
