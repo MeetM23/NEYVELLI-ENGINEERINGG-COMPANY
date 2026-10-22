@@ -49,10 +49,6 @@ export default function ProjectGallery() {
           </article>
         ))}
       </div>
-
-      <button className="bg-brand-gradient mt-8 rounded px-8 py-2.5 text-xs font-semibold text-white transition hover:opacity-90">
-        View More Projects
-      </button>
     </section>
   );
 }
